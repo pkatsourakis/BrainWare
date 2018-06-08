@@ -21,8 +21,9 @@ Check your instances of LocalDB with the commands
     > sqllocaldb i
 
 >returns list of all instances of LocalDB on your computer
-sqllocaldb i <DB_INSTANCE>
-returns version of database instance 
+
+    sqllocaldb i <DB_INSTANCE>
+>returns version of database instance 
 
 You need version 13+ to attach the database to your LocalDB. 
 
