@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[orderproduct]
 (
-	[order_id] int NOT NULL,
-	[product_id] int NOT NULL,
+	[order_id] BIGINT NOT NULL,
+	[product_id] BIGINT NOT NULL,
 	[price] decimal(18,2) NOT NULL,
 	[quantity] int NOT NULL, 
     CONSTRAINT [PK_orderproduct] PRIMARY KEY ([order_id], [product_id]), 
