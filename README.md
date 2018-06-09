@@ -37,5 +37,8 @@ If not, get the latest version of SQL Server. Create an instance of localdb with
 
 Then update the connection string.
 
+## New Output Example
+![page image](newOutput.PNG?raw=true)
+
 ## Original Output Example
 ![page image](output.GIF?raw=true)
