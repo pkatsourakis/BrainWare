@@ -1,0 +1,31 @@
+﻿@model IEnumerable<BrainWare.Models.CompanyOrder>
+
+@{
+    ViewData["Title"] = "My Orders";
+}
+
+<div class="jumbotron">
+    <h1>BrainWare Orders</h1>
+    <h3>This is the BrainWare orders page! Welcome</h3>
+</div>
+
+<div class="container">
+   
+    <h2 class="my-orders">My Orders</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            You haven't ordered anything yet! See what we have to offer!
+        </div>
+    }
+    else
+    {
+        foreach (CompanyOrder companyOrder in Model)
+        {
+            <h4 class="order-description">@companyOrder.OrderDescription (Total: $@companyOrder.OrderProducts.Sum(o => o.OrderTotal))</h4>
+
+            await Html.RenderPartialAsync("_OrderProduct", companyOrder.OrderProducts);
+        }
+    }
+</div>

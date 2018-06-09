@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BrainWare.Models.OrderProduct>
+
+<div class="panel-group">
+    @foreach (var orderProduct in Model)
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading"> @orderProduct.Product.ProductName </div>
+            <div class="panel-body">
+                Ordered @orderProduct.Quantity at $@orderProduct.Product.Price each
+                <br />Total: $@orderProduct.OrderTotal
+            </div>
+        </div>
+    }
+</div>

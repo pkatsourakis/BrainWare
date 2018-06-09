@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrainWare.Data\BrainWare.Data.csproj" />
+    <ProjectReference Include="..\BrainWare.Logger\BrainWare.Logger.csproj" />
+    <ProjectReference Include="..\BrainWare.Models\BrainWare.Models.csproj" />
+  </ItemGroup>
+
+</Project>
