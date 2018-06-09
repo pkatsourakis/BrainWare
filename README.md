@@ -10,7 +10,7 @@ The only requirement is that it returns the list of orders and that it meets you
 
 ## Changes for Running Locally
 
-Update the connection string in the class <project root>\Web\Infrastructure\Database.cs.
+Update the connection string in the class <project root>\BrainWare.Data\ConnectionManager.cs.
 
 Change the AttachDbFile name to the full path of the BrainWare.mdf file (located under <project root>\Web\App_Data\).
 
